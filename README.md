@@ -3,7 +3,7 @@
 Hello there!
 Here's the docs in order to learn how to use this API so you can implement it in your future projects.
 
-Maybe this is not the best documentation you have seen, cause this is my first day writing docs about an API project. Feel free to send me your feedback to [my personal email](hola@josuecuevas.com)
+Maybe this is not the best documentation you have seen, cause this is my first day writing docs about an API project. Feel free to send me your feedback to [my personal email](mailto:hola@josuecuevas.com)
 
 ## Installation
 
@@ -32,7 +32,7 @@ DB = "YourDataBase"
 
 The endpoint for creating a new task is:
 
-```bash
+```
 POST ${yourDomain||http://localhost}/api/tasks
 ```
 
@@ -49,7 +49,7 @@ This endpoint will receive an JSON object which must include
 
 You could get all task saved by using the following endpoint:
 
-```bash
+```
 GET ${yourDomain||http://localhost}/api/tasks
 ```
 
@@ -59,7 +59,7 @@ Which gives you all task as a JSON format
 
 The endpoint for getting one task is:
 
-```bash
+```
 GET ${yourDomain||http://localhost}/api/tasks/${id}
 ```
 
@@ -69,7 +69,7 @@ You have to proportionate the Mongo ID of your task previously saved in MongoDB.
 
 The only property which you can modify is the "done" property of your task, using the following endpoint
 
-```bash
+```
 PUT ${yourDomain||http://localhost}/api/tasks/${id}
 ```
 
@@ -79,7 +79,7 @@ You have to proportionate the Mongo ID of your task previously saved in MongoDB.
 
 You can delete a task whenever you want using the endpoint:
 
-```bash
+```
 PUT ${yourDomain||http://localhost}/api/tasks/${id}
 ```
 
