@@ -33,7 +33,7 @@ DB = "YourDataBase"
 The endpoint for creating a new task is:
 
 ```
-POST ${yourDomain||http://localhost}/api/tasks
+POST ${yourDomain||http://localhost:3000}/api/tasks
 ```
 
 This endpoint will receive an JSON object which must include
@@ -50,7 +50,7 @@ This endpoint will receive an JSON object which must include
 You could get all task saved by using the following endpoint:
 
 ```
-GET ${yourDomain||http://localhost}/api/tasks
+GET ${yourDomain||http://localhost:3000}/api/tasks
 ```
 
 Which gives you all task as a JSON format
@@ -60,7 +60,7 @@ Which gives you all task as a JSON format
 The endpoint for getting one task is:
 
 ```
-GET ${yourDomain||http://localhost}/api/tasks/${id}
+GET ${yourDomain||http://localhost:3000}/api/tasks/${id}
 ```
 
 You have to proportionate the Mongo ID of your task previously saved in MongoDB.
@@ -70,7 +70,7 @@ You have to proportionate the Mongo ID of your task previously saved in MongoDB.
 The only property which you can modify is the "done" property of your task, using the following endpoint
 
 ```
-PUT ${yourDomain||http://localhost}/api/tasks/${id}
+PUT ${yourDomain||http://localhost:3000}/api/tasks/${id}
 ```
 
 You have to proportionate the Mongo ID of your task previously saved in MongoDB.
@@ -80,7 +80,7 @@ You have to proportionate the Mongo ID of your task previously saved in MongoDB.
 You can delete a task whenever you want using the endpoint:
 
 ```
-PUT ${yourDomain||http://localhost}/api/tasks/${id}
+PUT ${yourDomain||http://localhost:3000}/api/tasks/${id}
 ```
 
 You have to proportionate the Mongo ID of your task previously saved in MongoDB in order to delete the correct task.
